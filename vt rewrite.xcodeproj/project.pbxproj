@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7722F981E3AE42D00C104E6 /* PinWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7722F971E3AE42D00C104E6 /* PinWrapper.swift */; };
 		F78F05351E33D1CC00B309EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F05341E33D1CC00B309EE /* AppDelegate.swift */; };
 		F78F05371E33D1CC00B309EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F05361E33D1CC00B309EE /* ViewController.swift */; };
 		F78F053A1E33D1CC00B309EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78F05381E33D1CC00B309EE /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		F78F05421E33D1CC00B309EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78F05401E33D1CC00B309EE /* LaunchScreen.storyboard */; };
 		F78F054D1E33D1CD00B309EE /* vt_rewriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F054C1E33D1CC00B309EE /* vt_rewriteTests.swift */; };
 		F78F05581E33D1CD00B309EE /* vt_rewriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F05571E33D1CD00B309EE /* vt_rewriteUITests.swift */; };
+		F78F05661E33E21600B309EE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F05651E33E21500B309EE /* Networking.swift */; };
+		F78F05681E34074800B309EE /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F05671E34074800B309EE /* NetworkingClient.swift */; };
+		F7EDA6B71E35462D00D80C19 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EDA6B61E35462D00D80C19 /* CollectionViewController.swift */; };
+		F7EDA6B91E367EC600D80C19 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EDA6B81E367EC600D80C19 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7722F971E3AE42D00C104E6 /* PinWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinWrapper.swift; sourceTree = "<group>"; };
 		F78F05311E33D1CC00B309EE /* vt rewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vt rewrite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78F05341E33D1CC00B309EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78F05361E33D1CC00B309EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		F78F05531E33D1CD00B309EE /* vt rewriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vt rewriteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78F05571E33D1CD00B309EE /* vt_rewriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vt_rewriteUITests.swift; sourceTree = "<group>"; };
 		F78F05591E33D1CD00B309EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78F05651E33E21500B309EE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		F78F05671E34074800B309EE /* NetworkingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		F7EDA6B61E35462D00D80C19 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F7EDA6B81E367EC600D80C19 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				F78F05401E33D1CC00B309EE /* LaunchScreen.storyboard */,
 				F78F05431E33D1CC00B309EE /* Info.plist */,
 				F78F053B1E33D1CC00B309EE /* vt_rewrite.xcdatamodeld */,
+				F78F05651E33E21500B309EE /* Networking.swift */,
+				F78F05671E34074800B309EE /* NetworkingClient.swift */,
+				F7EDA6B61E35462D00D80C19 /* CollectionViewController.swift */,
+				F7EDA6B81E367EC600D80C19 /* CustomCell.swift */,
+				F7722F971E3AE42D00C104E6 /* PinWrapper.swift */,
 			);
 			path = "vt rewrite";
 			sourceTree = "<group>";
@@ -196,6 +211,7 @@
 				TargetAttributes = {
 					F78F05301E33D1CC00B309EE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8UR7G64J2J;
 						ProvisioningStyle = Automatic;
 					};
 					F78F05471E33D1CC00B309EE = {
@@ -262,9 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EDA6B71E35462D00D80C19 /* CollectionViewController.swift in Sources */,
 				F78F05371E33D1CC00B309EE /* ViewController.swift in Sources */,
+				F78F05681E34074800B309EE /* NetworkingClient.swift in Sources */,
+				F7722F981E3AE42D00C104E6 /* PinWrapper.swift in Sources */,
 				F78F05351E33D1CC00B309EE /* AppDelegate.swift in Sources */,
 				F78F053D1E33D1CC00B309EE /* vt_rewrite.xcdatamodeld in Sources */,
+				F7EDA6B91E367EC600D80C19 /* CustomCell.swift in Sources */,
+				F78F05661E33E21600B309EE /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8UR7G64J2J;
 				INFOPLIST_FILE = "vt rewrite/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "harry.vt-rewrite";
@@ -428,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8UR7G64J2J;
 				INFOPLIST_FILE = "vt rewrite/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "harry.vt-rewrite";
@@ -509,6 +532,7 @@
 				F78F055E1E33D1CD00B309EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F78F055F1E33D1CD00B309EE /* Build configuration list for PBXNativeTarget "vt rewriteTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +541,7 @@
 				F78F05611E33D1CD00B309EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F78F05621E33D1CD00B309EE /* Build configuration list for PBXNativeTarget "vt rewriteUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +550,7 @@
 				F78F05641E33D1CD00B309EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
