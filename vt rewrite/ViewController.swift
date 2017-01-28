@@ -56,6 +56,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let pin = (view.annotation as! PinWrapper).pin
+        mapView.deselectAnnotation(view.annotation, animated: true)
         if(!deleteMode) {
             print("pressed")
             let destinationVC = storyboard?.instantiateViewController(withIdentifier: "CollectionVC") as! CollectionViewController
