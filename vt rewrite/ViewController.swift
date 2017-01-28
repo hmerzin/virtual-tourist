@@ -42,8 +42,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
             let coord: CLLocationCoordinate2D = mapView.convert(touchPoint, toCoordinateFrom: self.mapView)
             let pin = Pin(entity: NSEntityDescription.entity(forEntityName: "Pin", in: appDelegate.persistentContainer.viewContext)!, insertInto: appDelegate.persistentContainer.viewContext)
             let annotation = PinWrapper(coordinate: coord, pin: pin)
-            pin.latitude = Int32(coord.latitude)
-            pin.longitude = Int32(coord.longitude)
+            pin.latitude = Double(coord.latitude)
+            pin.longitude = Double(coord.longitude)
             networkingClient.getImageFromFlickr(coordinate: coord, pin: pin, page: 1)
             mapView.addAnnotation(annotation)
         }
