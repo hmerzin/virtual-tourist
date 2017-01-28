@@ -99,6 +99,8 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     @IBAction func refresh(_ sender: Any) {
+        pin?.imagesCount = 13
+        self.pin?.page = (self.pin?.page)! + 1
         images.forEach({ image -> Void in
             context.delete(image)
             do {
@@ -107,7 +109,13 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
                 fatalError("couldn't delete images")
             }
         })
-        networking.getImageFromFlickr(coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees((pin?.latitude)!), longitude: CLLocationDegrees((pin?.longitude)!)), pin: self.pin!, page: Int(self.pin!.page) + 1)
+        images.removeAll()
+        selectedImages.removeAll()
+        pin?.imagesCount = 13
+        //collectionView.reloadData()
+        
+        networking.getImageFromFlickr(coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees((pin?.latitude)!), longitude: CLLocationDegrees((pin?.longitude)!)), pin: self.pin!, page: Int((self.pin?.page)!))
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

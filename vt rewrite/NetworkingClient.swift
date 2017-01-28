@@ -38,12 +38,8 @@ class NetworkingClient {
                         let notification = Notification(name: Notification.Name(rawValue: "downloaded"))
                         NotificationCenter.default.post(notification)
                     })
-                    
-                    
                 })
-                
             }
         })
     }
-    
 }
